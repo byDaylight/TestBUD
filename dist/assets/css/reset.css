@@ -67,6 +67,10 @@ input[type=search] {
     box-sizing: content-box;
 }
 
+ol, ul {
+    list-style: none;
+}
+
 textarea {
     overflow: auto;
     vertical-align: top;

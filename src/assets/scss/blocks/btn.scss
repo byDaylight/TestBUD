@@ -54,6 +54,30 @@
     &--readMoreBrw {
         color: $brown;
     }
+    &--start {
+        color: $orange;
+        text-decoration: underline;
+        
+        &:hover {
+            color: darken($orange, 10%);
+        }
+    }
+    
+    &--collab {
+        font-family: 'Arial Bold';
+        
+        padding: 1.7rem 0;
+        margin-top: 2rem;
+        width: 100%;
+        border-radius: 1rem;
+        
+        background-color: $orange;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        filter: drop-shadow(0 .4rem .4rem #d57801);
+
+    }
 }
 
 

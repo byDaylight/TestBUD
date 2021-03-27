@@ -67,6 +67,10 @@ input[type=search] {
     box-sizing: content-box;
 }
 
+ol, ul {
+    list-style: none;
+}
+
 textarea {
     overflow: auto;
     vertical-align: top;
@@ -407,6 +411,14 @@ body {
     color: #fff;
 }
 
+.brw {
+    color: #431b0a;
+}
+
+.blk {
+    color: #000;
+}
+
 .benefit {
     background: url(/assets/images/advantage/320_02.jpg);
     background-size: cover;
@@ -493,7 +505,27 @@ body {
     color: #000;
 }
 
-.about {
+.btn--readMore, .btn--readMoreBrw {
+    font-family: 'Arial Bold';
+    border: 0.2rem solid #ffb215;
+    border-radius: 1rem;
+    padding: .8rem 3rem;
+}
+
+.btn--readMore:hover, .btn--readMoreBrw:hover {
+    background-color: #ffb215;
+    color: #000;
+}
+
+.btn--readMore {
+    color: #fff;
+}
+
+.btn--readMoreBrw {
+    color: #431b0a;
+}
+
+.about--bg {
     background-image: url(/assets/images/bg_aobut.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -530,11 +562,34 @@ body {
 }
 
 ul {
-    list-style: square outside;
     margin-bottom: 2rem;
 }
 
 .about__item {
     font-size: 1.6rem;
     line-height: 1.875;
+}
+
+.about__item::before {
+    display: inline-block;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #ffb215;
+    margin-right: 1rem;
+}
+
+.start {
+    background-image: url(/assets/images/start/bg_started_02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.start__num {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #ffb215;
 }

@@ -453,6 +453,22 @@ body {
     color: #fff; }
   .btn--readMoreBrw {
     color: #431b0a; }
+  .btn--start {
+    color: #ffb215;
+    text-decoration: underline; }
+    .btn--start:hover {
+      color: #e19700; }
+  .btn--collab {
+    font-family: 'Arial Bold';
+    padding: 1.7rem 0;
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: #ffb215;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    filter: drop-shadow(0 0.4rem 0.4rem #d57801); }
 
 .about--bg {
   background-image: url(/assets/images/bg_aobut.jpg);
@@ -497,3 +513,67 @@ ul {
     border-radius: 50%;
     background: #ffb215;
     margin-right: 1rem; }
+
+.start {
+  background-image: url(/assets/images/start/bg_started_02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.start__content {
+  padding: 7.5rem 0 6.5rem; }
+
+.start__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.start__item {
+  width: 25rem;
+  margin-bottom: 4rem;
+  text-align: center; }
+
+.start__caption {
+  font-family: 'Arial Black';
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5rem; }
+
+.start__img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: #f2f0ed;
+  margin-bottom: 2rem;
+  position: relative; }
+
+.start__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0); }
+
+.start__num {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #ffb215;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-family: 'Arial Bold';
+  color: #fff;
+  position: absolute;
+  top: -10%;
+  left: -10%; }
+
+.start__text {
+  font-family: 'Arial Black';
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  color: #fff;
+  margin-bottom: 1rem; }
