@@ -351,10 +351,85 @@ html {
 body {
   background-color: #fff;
   font-size: 1.4rem;
-  color: #000; }
+  color: #000;
+  font-family: 'Arial Regular'; }
 
 .container {
   width: 100%;
   max-width: 1110px;
   padding: 0 1rem;
   margin: 0 auto; }
+
+.benefit {
+  background: url(/assets/images/advantage/320_02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.benefit__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5.5rem 0; }
+
+.benefit__caption {
+  font-family: 'Arial Black';
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: #ffb215;
+  text-align: center;
+  margin-bottom: 3rem; }
+
+.benefit__item {
+  max-width: 35rem;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+  margin-bottom: 2rem; }
+
+.benefit__img {
+  margin: 1rem 0 2rem; }
+
+.benefit__title {
+  font-size: 1.4rem;
+  font-family: 'Arial Bold';
+  margin-bottom: 1rem;
+  color: #ffb215;
+  text-transform: uppercase; }
+
+.benefit__text {
+  font-size: 1.4rem;
+  line-height: 1.4em;
+  color: #fff;
+  opacity: .5;
+  margin-bottom: 4rem; }
+
+.btn {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color .2s linear, color .2s linear; }
+  .btn--benefit {
+    color: #fff;
+    border: .2rem solid #535058;
+    border-radius: 1rem;
+    padding: .7rem 1.5rem;
+    min-width: 25rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+    .btn--benefit:hover {
+      background-color: #ffb215;
+      color: #000; }
+
+.helpBtn {
+  position: relative;
+  width: 100%; }

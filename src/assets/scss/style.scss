@@ -14,12 +14,16 @@ body {
     background-color: $white;
     font-size: 1.4rem;
     color: $black;
+    font-family: 'Arial Regular';
 }
 
 
 @import "blocks/container";
-
+//-------------------------
 @import "blocks/advantage";
+@import "blocks/btn";
+@import "blocks/helper";
+
 
 
 

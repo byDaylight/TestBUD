@@ -1,0 +1,76 @@
+.benefit {
+//    background: linear-gradient(45deg, #393244, #725234);
+    background: url(/assets/images/advantage/320_02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.benefit__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 5.5rem 0;
+}
+.benefit__caption {
+    font-family: 'Arial Black';
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: $orange;
+    text-align: center;
+    
+    margin-bottom: 3rem;
+}
+
+.benefit__item {
+    max-width: 35rem;
+    width: 100%;
+    height: auto;
+    
+    text-align: center;
+    border-radius: 1rem;
+    
+//    background-color: #28242e;
+    position: relative;
+    
+    margin-bottom: 2rem;
+}
+
+.benefit__img {
+    margin: 1rem 0 2rem;
+}
+
+.benefit__title {
+    font-size: 1.4rem;
+    font-family: 'Arial Bold';
+    
+    margin-bottom: 1rem;
+    color: $orange;
+    text-transform: uppercase;
+}
+
+.benefit__text {
+    font-size: 1.4rem;
+    line-height: 1.4em;
+    color: $white;
+    opacity: .5;
+    
+//    margin-bottom: 6rem;
+    margin-bottom: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

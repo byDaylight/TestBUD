@@ -393,6 +393,7 @@ body {
     background-color: #fff;
     font-size: 1.4rem;
     color: #000;
+    font-family: 'Arial Regular';
 }
 
 .container {
@@ -400,4 +401,36 @@ body {
     max-width: 1110px;
     padding: 0 1rem;
     margin: 0 auto;
+}
+
+.benefit {
+    background: linear-gradient(45deg, #393244, #725234);
+}
+
+.benefit__item {
+    max-width: 35rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #28242e;
+}
+
+.benefit__img {
+    margin: 1rem 0 2rem;
+}
+
+.benefit__title {
+    font-size: 1.4rem;
+    font-family: 'Arial Bold';
+    margin-bottom: 1rem;
+    color: #ffb215;
+    text-transform: uppercase;
+}
+
+.benefit__text {
+    font-size: 1.4rem;
+    line-height: 1.4em;
+    color: #fff;
+    opacity: .5;
+    margin-bottom: 3rem;
 }
