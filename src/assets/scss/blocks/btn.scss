@@ -78,6 +78,22 @@
         filter: drop-shadow(0 .4rem .4rem #d57801);
 
     }
+    &--rection {
+        font-family: 'Arial Bold';
+        width: 22rem;
+        text-align: center;
+        
+        border: .2rem solid $orange;
+        border-radius: 1rem;
+        padding: .8rem 0;
+        color: $brown;
+        
+        &:hover {
+            background-color: $orange;
+            color: $black;
+        }
+        
+    }
 }
 
 

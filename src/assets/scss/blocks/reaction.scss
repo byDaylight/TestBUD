@@ -1,0 +1,69 @@
+.reaction__content {
+    padding: 5.5rem 0;
+    text-align: center;
+}
+
+.reaction__caption {
+    text-align: center;
+    
+    font-size: 2.4rem;
+    font-family: 'Arial Black';
+    
+    color: $brown;
+    margin-bottom: 3.5rem;
+}
+
+.reaction__slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+
+.reaction__item {
+    background-color: #f5f3f1;
+    padding: 1.5rem 1.5rem 2.5rem;
+    
+    text-align: center;
+    border-radius: 1rem;
+    margin: 0 .5rem 2rem;
+    width: 33%;
+}
+
+.reaction__img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    
+    border: .8rem solid #f7dfc1;
+    margin-bottom: 1rem;
+}
+
+.reaction__name {
+    font-family: 'Arial Bold';
+    
+    color: $reaction;
+    text-transform: uppercase;
+    margin-bottom: 1.7rem;
+}
+
+.reaction__text {
+    line-height: 1.44em;
+    color: $reaction;
+    opacity: .8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

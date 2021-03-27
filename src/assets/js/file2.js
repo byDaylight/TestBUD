@@ -1,6 +1,11 @@
 $(document).ready(function(){
-    $('.work__slider').slick({
-        arrows: false
+    $('.reaction__slider').slick({
+        arrows: false,
+        dots: true,
+        adaptiveHeight: true,
+        slidestoshow: 1,
+        slidesToScroll: 1,
+        infinite: true
         
     });
 });

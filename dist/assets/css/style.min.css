@@ -354,12 +354,6 @@ body {
   color: #000;
   font-family: 'Arial Regular'; }
 
-.container {
-  width: 100%;
-  max-width: 1110px;
-  padding: 0 1rem;
-  margin: 0 auto; }
-
 .org {
   color: #ffb215; }
 
@@ -371,6 +365,12 @@ body {
 
 .blk {
   color: #000; }
+
+.container {
+  width: 100%;
+  max-width: 1110px;
+  padding: 0 1rem;
+  margin: 0 auto; }
 
 .benefit {
   background: url(/assets/images/advantage/320_02.jpg);
@@ -469,6 +469,17 @@ body {
     text-transform: uppercase;
     text-align: center;
     filter: drop-shadow(0 0.4rem 0.4rem #d57801); }
+  .btn--rection {
+    font-family: 'Arial Bold';
+    width: 22rem;
+    text-align: center;
+    border: 0.2rem solid #ffb215;
+    border-radius: 1rem;
+    padding: .8rem 0;
+    color: #431b0a; }
+    .btn--rection:hover {
+      background-color: #ffb215;
+      color: #000; }
 
 .about--bg {
   background-image: url(/assets/images/bg_aobut.jpg);
@@ -577,3 +588,76 @@ ul {
   line-height: 1.5em;
   color: #fff;
   margin-bottom: 1rem; }
+
+.reaction__content {
+  padding: 5.5rem 0;
+  text-align: center; }
+
+.reaction__caption {
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: 'Arial Black';
+  color: #431b0a;
+  margin-bottom: 3.5rem; }
+
+.reaction__slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.reaction__item {
+  background-color: #f5f3f1;
+  padding: 1.5rem 1.5rem 2.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin: 0 .5rem 2rem;
+  width: 33%; }
+
+.reaction__img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: .8rem solid #f7dfc1;
+  margin-bottom: 1rem; }
+
+.reaction__name {
+  font-family: 'Arial Bold';
+  color: #1a2326;
+  text-transform: uppercase;
+  margin-bottom: 1.7rem; }
+
+.reaction__text {
+  line-height: 1.44em;
+  color: #1a2326;
+  opacity: .8; }
+
+.slick-track {
+  display: flex; }
+
+.slick-list {
+  overflow: hidden; }
+
+.reaction__slider {
+  padding-bottom: 10px; }
+  .reaction__slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .reaction__slider .slick-dots li {
+    list-style: none;
+    margin: 0 1rem; }
+    .reaction__slider .slick-dots li button {
+      font-size: 0;
+      padding: 0;
+      background-color: #a6a6a6;
+      border: none;
+      outline: none;
+      height: 1rem;
+      width: 1rem;
+      border-radius: 50%;
+      display: flex; }
+    .reaction__slider .slick-dots li.slick-active button {
+      background-color: #ffb215;
+      border: 0.4rem solid #ffd47b;
+      height: 2rem;
+      width: 2rem; }
