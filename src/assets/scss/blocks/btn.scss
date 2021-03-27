@@ -34,4 +34,35 @@
         left: 50%;
         transform:translateX(-50%);
     }
+    
+    &--readMore,
+    &--readMoreBrw{
+        font-family: 'Arial Bold';
+        
+        border: .2rem solid $orange;
+        border-radius: 1rem;
+        padding: .8rem 3rem;
+        
+        &:hover {
+            background-color: $orange;
+            color: $black;
+        }
+    }
+    &--readMore {
+        color: $white;
+    }
+    &--readMoreBrw {
+        color: $brown;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+

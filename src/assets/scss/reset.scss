@@ -39,9 +39,6 @@ body {
 	line-height: 1;
 }
 
-ol, ul {
-	list-style: none;
-}
 
 blockquote, q {
 	quotes: none;
@@ -72,6 +69,10 @@ input[type=search] {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
+}
+
+ol, ul {
+    list-style: none;
 }
 
 textarea {

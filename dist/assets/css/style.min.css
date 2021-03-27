@@ -34,9 +34,6 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1; }
 
-ol, ul {
-  list-style: none; }
-
 blockquote, q {
   quotes: none; }
 
@@ -62,6 +59,9 @@ input[type=search] {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box; }
+
+ol, ul {
+  list-style: none; }
 
 textarea {
   overflow: auto;
@@ -360,6 +360,18 @@ body {
   padding: 0 1rem;
   margin: 0 auto; }
 
+.org {
+  color: #ffb215; }
+
+.wh {
+  color: #fff; }
+
+.brw {
+  color: #431b0a; }
+
+.blk {
+  color: #000; }
+
 .benefit {
   background: url(/assets/images/advantage/320_02.jpg);
   background-size: cover;
@@ -429,7 +441,59 @@ body {
     .btn--benefit:hover {
       background-color: #ffb215;
       color: #000; }
+  .btn--readMore, .btn--readMoreBrw {
+    font-family: 'Arial Bold';
+    border: 0.2rem solid #ffb215;
+    border-radius: 1rem;
+    padding: .8rem 3rem; }
+    .btn--readMore:hover, .btn--readMoreBrw:hover {
+      background-color: #ffb215;
+      color: #000; }
+  .btn--readMore {
+    color: #fff; }
+  .btn--readMoreBrw {
+    color: #431b0a; }
 
-.helpBtn {
-  position: relative;
-  width: 100%; }
+.about--bg {
+  background-image: url(/assets/images/bg_aobut.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.about__content {
+  padding: 8rem 0; }
+
+.about__title {
+  font-family: 'Arial Black';
+  font-size: 2.4rem;
+  line-height: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4.5rem; }
+
+.about__text {
+  font-size: 1.6rem;
+  line-height: 1.875; }
+  .about__text p {
+    margin-bottom: 3rem; }
+
+.about__type {
+  font-family: 'Arial Bold';
+  font-size: 1.6rem;
+  line-height: 1.875;
+  margin-bottom: 2rem; }
+
+ul {
+  margin-bottom: 2rem; }
+
+.about__item {
+  font-size: 1.6rem;
+  line-height: 1.875; }
+  .about__item::before {
+    display: inline-block;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #ffb215;
+    margin-right: 1rem; }
