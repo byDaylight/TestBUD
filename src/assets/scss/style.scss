@@ -1,4 +1,4 @@
-@import "vars";
+@import "_vars";
 @import "reset";
 @import "fonts";
 
@@ -18,6 +18,8 @@ body {
 
 
 @import "blocks/container";
+
+@import "blocks/advantage";
 
 
 
