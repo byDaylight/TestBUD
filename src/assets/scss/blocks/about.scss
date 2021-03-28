@@ -4,11 +4,20 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+
+        @include breakMin($mode-600) {
+            background: linear-gradient(45deg, #393244, #725234);
+        }
     }
+    overflow-x: hidden;
 }
 
 .about__content {
-    padding: 8rem 0;
+    padding-bottom: 8rem;
+    
+    @include breakMin($mode-991) {
+        width: 50%;
+    }
 }
 
 .about__title {
@@ -19,6 +28,7 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 4.5rem;
+    padding-top: 8rem;
 }
 
 .about__text {
@@ -59,3 +69,39 @@ ul {
         margin-right: 1rem;
     }
 }
+
+.about__wrapPhoto {
+    position: absolute;
+    bottom: 0;
+    right: -44rem;
+    
+}
+
+.about__right {
+    width: 94rem;
+    height: 70rem;
+
+    position: relative;
+    overflow: hidden;
+    display: none;
+    
+    @include breakMin($mode-991) {
+        display: block;
+    }
+}
+
+.about__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.about__whole {
+    display: flex;
+    position: relative;
+}
+
+
+
+
