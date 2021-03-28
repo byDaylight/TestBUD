@@ -1,0 +1,37 @@
+.form__item {
+    position: relative;
+    margin-bottom: 1.3rem;
+}
+
+.form__input,
+.form__textarea {
+    font-family: 'Arial Regular';
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 1.4rem 1rem 1.4rem 4rem;
+
+    border-radius: .5rem;
+    outline: none;
+    border: .1rem solid #dddddd;
+}
+
+.form__textarea {
+    min-height: 6rem;
+    resize: vertical;
+}
+
+.form__img {
+    position: absolute;
+    left: 0;
+    
+    &--input {
+        top: 50%;
+        transform: translatey(-50%);
+        padding-left: 1.2rem;
+    }
+    &--area {
+        top: 0;
+        padding: 1.5rem 0 0 1.2rem;
+    }
+}
+

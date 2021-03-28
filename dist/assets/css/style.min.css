@@ -458,7 +458,7 @@ body {
     text-decoration: underline; }
     .btn--start:hover {
       color: #e19700; }
-  .btn--collab {
+  .btn--collab, .btn--send, .btn--value {
     font-family: 'Arial Bold';
     padding: 1.7rem 0;
     margin-top: 2rem;
@@ -469,6 +469,11 @@ body {
     text-transform: uppercase;
     text-align: center;
     filter: drop-shadow(0 0.4rem 0.4rem #d57801); }
+  .btn--send {
+    margin-top: .5rem;
+    margin-bottom: 3rem; }
+  .btn--value {
+    margin-bottom: 4.5rem; }
   .btn--rection {
     font-family: 'Arial Bold';
     width: 22rem;
@@ -661,3 +666,89 @@ ul {
       border: 0.4rem solid #ffd47b;
       height: 2rem;
       width: 2rem; }
+
+.footer {
+  background-image: url(/assets/images/footer_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.footer__content {
+  padding-top: 3.5rem; }
+
+.footer__caption {
+  font-size: 1.6rem;
+  font-family: 'Arial Bold';
+  color: #fff;
+  padding-bottom: 2rem;
+  text-transform: uppercase; }
+
+.footer__logo {
+  margin-bottom: 3.5rem; }
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.5rem; }
+
+.footer__phone {
+  font-size: 1.6rem;
+  font-family: 'Arial Bold';
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: .5rem; }
+  .footer__phone:hover {
+    text-decoration: underline; }
+
+.form__item {
+  position: relative;
+  margin-bottom: 1.3rem; }
+
+.form__input,
+.form__textarea {
+  font-family: 'Arial Regular';
+  font-size: 1.3rem;
+  width: 100%;
+  padding: 1.4rem 1rem 1.4rem 4rem;
+  border-radius: .5rem;
+  outline: none;
+  border: .1rem solid #dddddd; }
+
+.form__textarea {
+  min-height: 6rem;
+  resize: vertical; }
+
+.form__img {
+  position: absolute;
+  left: 0; }
+  .form__img--input {
+    top: 50%;
+    transform: translatey(-50%);
+    padding-left: 1.2rem; }
+  .form__img--area {
+    top: 0;
+    padding: 1.5rem 0 0 1.2rem; }
+
+.social__link {
+  margin-bottom: 1rem;
+  display: flex; }
+  .social__link a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #fff; }
+  .social__link:hover {
+    text-decoration: underline; }
+  .social__link:last-child {
+    margin-bottom: 3.5rem; }
+
+.social__icon {
+  margin-right: 1.2rem; }
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem; }
+  .copyright p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1.5rem; }

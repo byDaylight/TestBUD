@@ -63,7 +63,9 @@
         }
     }
     
-    &--collab {
+    &--collab,
+    &--send,
+    &--value{
         font-family: 'Arial Bold';
         
         padding: 1.7rem 0;
@@ -76,7 +78,13 @@
         text-transform: uppercase;
         text-align: center;
         filter: drop-shadow(0 .4rem .4rem #d57801);
-
+    }
+    &--send {
+        margin-top: .5rem;
+        margin-bottom: 3rem;
+    }
+    &--value {
+        margin-bottom: 4.5rem;
     }
     &--rection {
         font-family: 'Arial Bold';
