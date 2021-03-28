@@ -64,6 +64,9 @@
         &:hover {
             color: darken($orange, 10%);
         }
+        @include breakMin($mode-991) {
+            color: $white;
+        }
     }
     
     &--collab,
@@ -81,6 +84,17 @@
         text-transform: uppercase;
         text-align: center;
         filter: drop-shadow(0 .4rem .4rem #d57801);
+        
+        &:hover {
+            background-color: darken($orange, 15%);
+        }
+    }
+    &--collab {
+        margin-top: 0;
+        @include breakMin($mode-400) {
+            max-width: 23rem;
+
+        }
     }
     &--send {
         margin-top: .5rem;

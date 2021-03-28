@@ -547,6 +547,9 @@ body {
     text-decoration: underline; }
     .btn--start:hover {
       color: #e19700; }
+    @media (min-width: 991px) {
+      .btn--start {
+        color: #fff; } }
   .btn--collab, .btn--send, .btn--value {
     font-family: 'Arial Bold';
     padding: 1.7rem 0;
@@ -558,6 +561,13 @@ body {
     text-transform: uppercase;
     text-align: center;
     filter: drop-shadow(0 0.4rem 0.4rem #d57801); }
+    .btn--collab:hover, .btn--send:hover, .btn--value:hover {
+      background-color: #c88600; }
+  .btn--collab {
+    margin-top: 0; }
+    @media (min-width: 400px) {
+      .btn--collab {
+        max-width: 23rem; } }
   .btn--send {
     margin-top: .5rem;
     margin-bottom: 3rem; }
@@ -658,26 +668,49 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
+  @media (min-width: 600px) {
+    .start {
+      background: linear-gradient(45deg, #393244, #725234); } }
 
 .start__content {
-  padding: 7.5rem 0 6.5rem; }
+  padding: 7.5rem 0 6.5rem;
+  text-align: center; }
+  @media (min-width: 991px) {
+    .start__content {
+      padding-bottom: 7.5rem; } }
 
 .start__inner {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media (min-width: 600px) {
+    .start__inner {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start; } }
+  @media (min-width: 991px) {
+    .start__inner {
+      justify-content: flex-start; } }
 
 .start__item {
   width: 25rem;
-  margin-bottom: 4rem;
+  margin: 0 1.5rem 4rem;
   text-align: center; }
+  @media (min-width: 991px) {
+    .start__item {
+      text-align: left;
+      width: 22rem;
+      margin-right: 2.5rem;
+      margin-left: 2.5rem; }
+      .start__item:first-child {
+        margin-left: 0; } }
 
 .start__caption {
   font-family: 'Arial Black';
   font-size: 2.4rem;
   text-transform: uppercase;
   color: #fff;
-  text-align: center;
   margin-bottom: 5rem; }
 
 .start__img {
@@ -688,6 +721,9 @@ ul {
   background-color: #f2f0ed;
   margin-bottom: 2rem;
   position: relative; }
+  @media (min-width: 991px) {
+    .start__img {
+      margin-left: 0; } }
 
 .start__icon {
   position: absolute;
@@ -711,7 +747,7 @@ ul {
   left: -10%; }
 
 .start__text {
-  font-family: 'Arial Black';
+  font-family: 'Arial Bold';
   font-size: 1.6rem;
   line-height: 1.5em;
   color: #fff;

@@ -3,9 +3,18 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
+    @include breakMin($mode-600) {
+        background: linear-gradient(45deg, #393244, #725234); 
+    }
 }
 .start__content {
     padding: 7.5rem 0 6.5rem;
+    text-align: center;
+    
+    @include breakMin($mode-991) {
+        padding-bottom: 7.5rem;
+    }
 }
 
 .start__inner {
@@ -13,13 +22,36 @@
     flex-direction: column;
     align-items: center;
     
+    @include breakMin($mode-600) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    @include breakMin($mode-991) {
+        justify-content: flex-start;    
+    }
+
+    
 }
 
 .start__item {
     width: 25rem;
-    margin-bottom: 4rem;
+    margin: 0 1.5rem 4rem;
     
     text-align: center;
+    
+    @include breakMin($mode-991) {
+        text-align: left;   
+        width: 22rem;
+        margin-right: 2.5rem;
+        margin-left: 2.5rem;
+        
+        &:first-child {
+            margin-left: 0;
+        }
+        
+    }
 }
 
 .start__caption {
@@ -28,7 +60,6 @@
     
     text-transform: uppercase;
     color: $white;
-    text-align: center;
     margin-bottom: 5rem;
 }
 
@@ -42,6 +73,10 @@
     background-color: #f2f0ed;
     margin-bottom: 2rem;
     position: relative;
+    
+    @include breakMin($mode-991) {
+        margin-left: 0;    
+    }
 }
 
 .start__icon {
@@ -71,7 +106,7 @@
 }
 
 .start__text {
-    font-family: 'Arial Black';
+    font-family: 'Arial Bold';
     font-size: 1.6rem;
     
     line-height: 1.5em;

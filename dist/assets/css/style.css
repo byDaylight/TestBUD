@@ -714,6 +714,10 @@ body {
     color: #000;
 }
 
+.about {
+    overflow-x: hidden;
+}
+
 .about--bg {
     background-image: url(/assets/images/bg_aobut.jpg);
     background-size: cover;
@@ -721,8 +725,20 @@ body {
     background-position: center;
 }
 
+@media (min-width: 600px) {
+    .about--bg {
+        background: linear-gradient(45deg, #393244, #725234);
+    }
+}
+
 .about__content {
-    padding: 8rem 0;
+    padding-bottom: 8rem;
+}
+
+@media (min-width: 991px) {
+    .about__content {
+        width: 50%;
+    }
 }
 
 .about__title {
@@ -732,6 +748,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 4.5rem;
+    padding-top: 8rem;
 }
 
 .about__text {
@@ -767,6 +784,40 @@ ul {
     border-radius: 50%;
     background: #ffb215;
     margin-right: 1rem;
+}
+
+.about__wrapPhoto {
+    position: absolute;
+    bottom: 0;
+    right: -44rem;
+}
+
+.about__right {
+    width: 94rem;
+    height: 70rem;
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+
+@media (min-width: 991px) {
+    .about__right {
+        display: block;
+    }
+}
+
+.about__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.about__whole {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
 }
 
 .start {
