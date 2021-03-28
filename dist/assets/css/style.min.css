@@ -569,10 +569,13 @@ body {
       .btn--collab {
         max-width: 23rem; } }
   .btn--send {
-    margin-top: .5rem;
-    margin-bottom: 3rem; }
-  .btn--value {
-    margin-bottom: 4.5rem; }
+    margin-top: .5rem; }
+    @media (max-width: 600px) {
+      .btn--send {
+        margin-bottom: 3.5rem; } }
+  @media (max-width: 991px) {
+    .btn--value {
+      margin-top: 0; } }
   .btn--rection {
     font-family: 'Arial Bold';
     width: 22rem;
@@ -584,6 +587,12 @@ body {
     .btn--rection:hover {
       background-color: #ffb215;
       color: #000; }
+  .btn--rekvizut {
+    font-size: 1.6rem;
+    font-family: 'Arial Bold';
+    color: #fff;
+    padding: 0 0 2rem;
+    text-transform: uppercase; }
 
 .about {
   overflow-x: hidden; }
@@ -597,7 +606,8 @@ body {
         background: linear-gradient(45deg, #393244, #725234); } }
 
 .about__content {
-  padding-bottom: 8rem; }
+  padding-bottom: 8rem;
+  padding-right: 2rem; }
   @media (min-width: 991px) {
     .about__content {
       width: 50%; } }
@@ -606,10 +616,16 @@ body {
   font-family: 'Arial Black';
   font-size: 2.4rem;
   line-height: 1.5em;
-  text-align: center;
   text-transform: uppercase;
   margin-bottom: 4.5rem;
-  padding-top: 8rem; }
+  padding-top: 8rem;
+  width: 100%;
+  text-align: center; }
+  @media (min-width: 991px) {
+    .about__title {
+      width: 60%;
+      margin-right: auto;
+      margin-left: auto; } }
 
 .about__text {
   font-size: 1.6rem;
@@ -844,9 +860,58 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
+  @media (min-width: 600px) {
+    .footer {
+      background: linear-gradient(45deg, #393244, #725234); } }
 
 .footer__content {
-  padding-top: 3.5rem; }
+  display: flex;
+  flex-wrap: wrap; }
+
+.footer__col {
+  width: 100%; }
+  .footer__col--first {
+    width: 28%;
+    border-right: 0.2rem solid rgba(255, 255, 255, 0.1);
+    padding-right: 5%; }
+    @media (max-width: 787px) {
+      .footer__col--first {
+        padding-right: 3%; } }
+    @media (max-width: 600px) {
+      .footer__col--first {
+        width: 45%;
+        order: 2; } }
+    @media (max-width: 400px) {
+      .footer__col--first {
+        width: 100%;
+        border: none; } }
+  .footer__col--second {
+    width: 40%;
+    border-right: 0.2rem solid rgba(255, 255, 255, 0.1);
+    padding: 0 5.4%; }
+    @media (max-width: 787px) {
+      .footer__col--second {
+        padding: 0 3.4%; } }
+    @media (max-width: 600px) {
+      .footer__col--second {
+        border: none;
+        width: 55%;
+        order: 3; } }
+    @media (max-width: 400px) {
+      .footer__col--second {
+        width: 100%;
+        padding: 0; } }
+  .footer__col--third {
+    width: 31.5%;
+    padding-left: 7%; }
+    @media (max-width: 787px) {
+      .footer__col--third {
+        padding-left: 4.5%; } }
+    @media (max-width: 600px) {
+      .footer__col--third {
+        width: 100%;
+        padding-left: 0;
+        order: 1; } }
 
 .footer__caption {
   font-size: 1.6rem;
@@ -856,7 +921,9 @@ ul {
   text-transform: uppercase; }
 
 .footer__logo {
-  margin-bottom: 3.5rem; }
+  margin: 3rem 0 3.5rem;
+  height: 4.9rem;
+  width: 15.2rem; }
 
 .footer__contact {
   display: flex;
@@ -871,6 +938,12 @@ ul {
   margin-bottom: .5rem; }
   .footer__phone:hover {
     text-decoration: underline; }
+  @media (max-width: 787px) {
+    .footer__phone {
+      font-size: 1.5rem; } }
+  @media (max-width: 400px) {
+    .footer__phone {
+      font-size: 1.6rem; } }
 
 .form__item {
   position: relative;
@@ -911,7 +984,7 @@ ul {
   .social__link:hover {
     text-decoration: underline; }
   .social__link:last-child {
-    margin-bottom: 3.5rem; }
+    margin-bottom: 3rem; }
 
 .social__icon {
   margin-right: 1.2rem; }
@@ -919,8 +992,41 @@ ul {
 .copyright {
   display: flex;
   flex-direction: column;
-  padding-bottom: 2rem; }
+  padding-bottom: 1rem;
+  margin-top: 2.5rem; }
   .copyright p {
     font-size: 1.2rem;
     color: #fff;
     margin-bottom: 1.5rem; }
+  @media (min-width: 600px) {
+    .copyright {
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.person {
+  display: none; }
+  @media (min-width: 400px) {
+    .person {
+      display: block; } }
+
+.person__pos,
+.person__name,
+.person__code,
+.person__address {
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  color: #fff; }
+
+.person__name,
+.person__code,
+.person__address {
+  margin-bottom: 2.5rem; }
+  @media (max-width: 600px) {
+    .person__name,
+    .person__code,
+    .person__address {
+      margin-bottom: 1rem; } }
+
+@media (max-width: 400px) {
+  .person__address {
+    margin-bottom: 3rem; } }

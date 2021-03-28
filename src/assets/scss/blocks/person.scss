@@ -1,0 +1,32 @@
+.person {
+    display: none;
+
+    @include breakMin($mode-400) {
+        display: block;
+    }
+}
+
+.person__pos,
+.person__name,
+.person__code,
+.person__address {
+    font-size: 1.6rem;
+    line-height: 1.5em;
+
+    color: $white;
+}
+
+.person__name,
+.person__code,
+.person__address {
+    margin-bottom: 2.5rem;
+
+    @include breakMax($mode-600) {
+        margin-bottom: 1rem;
+    }
+}
+.person__address {
+    @include breakMax($mode-400) {
+        margin-bottom: 3rem;
+    }
+}

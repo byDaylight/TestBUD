@@ -3,11 +3,70 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
+    @include breakMin($mode-600) {
+        background: linear-gradient(45deg, #393244, #725234); 
+    }
 }
 
+
 .footer__content {
-    padding-top: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.footer__col {
+    width: 100%;
+    &--first {
+        width: 28%;
+        border-right: .2rem solid rgba($white, .1);
+        padding-right: 5%;
+        
+        @include breakMax($mode-787) {
+            padding-right: 3%;
+        }
+        @include breakMax($mode-600) {
+            width: 45%;
+            order: 2;
+        }
+        @include breakMax($mode-400) {
+            width: 100%;
+            border: none;
+        }
+    }
+    &--second {
+        width: 40%;
+        border-right: .2rem solid rgba($white, .1);
+        padding: 0 5.4%;
+        
+        @include breakMax($mode-787) {
+            padding: 0 3.4%;
+        }
+        @include breakMax($mode-600) {
+            border: none;
+            width: 55%;
+            order: 3;
+        }
+        @include breakMax($mode-400) {
+            width: 100%;
+            padding: 0;
+        }
+    }
+    &--third {
+        width: 31.5%;
+        padding-left: 7%;
+        
+        @include breakMax($mode-787) {
+            padding-left: 4.5%;
+        }
+        @include breakMax($mode-600) {
+            width: 100%;
+            padding-left: 0;
+            order: 1;
+        }
+    }
+}
+
 
 .footer__caption {
     font-size: 1.6rem;
@@ -19,7 +78,9 @@
 }
 
 .footer__logo {
-    margin-bottom: 3.5rem;
+    margin:3rem 0 3.5rem;
+    height: 4.9rem;
+    width: 15.2rem;
 }
 
 .footer__contact {
@@ -39,5 +100,10 @@
     &:hover {
         text-decoration: underline;
     }
+    @include breakMax($mode-787) {
+        font-size: 1.5rem;
+    }
+    @include breakMax($mode-400) {
+        font-size: 1.6rem;
+    }
 }
-

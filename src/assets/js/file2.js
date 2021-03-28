@@ -62,3 +62,32 @@ $('#unslick').on('click', function (e) {
     $('.reaction__slider').slick('unslick');
     
 });
+
+/* rekvizut */
+var rekvizut = document.getElementsByClassName("rekvizut");
+var i;
+
+for (i = 0; i < rekvizut.length; i++) {
+  rekvizut[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var person = this.nextElementSibling;
+    if (person.style.display === "block") {
+      person.style.display = "none";
+    } else {
+      person.style.display = "block";
+    }
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -13,121 +13,132 @@
 
     transition: background-color .2s linear,
         color .2s linear;
-    
+
     &--benefit {
         color: $white;
-        
+
         border: .2rem solid #535058;
         border-radius: 1rem;
         padding: .7rem 1.5rem;
-        
+
         min-width: 25rem;
-        
+
         &:hover {
             background-color: $orange;
             color: $black;
         }
-        
+
         position: absolute;
         bottom: 0;
         left: 50%;
         transform:translateX(-50%);
-        
+
         @include breakMin($mode-600) {
             bottom: 2rem;
         }
     }
-    
+
     &--readMore,
-    &--readMoreBrw{
+    &--readMoreBrw {
         font-family: 'Arial Bold';
-        
+
         border: .2rem solid $orange;
         border-radius: 1rem;
         padding: .8rem 3rem;
-        
+
         &:hover {
             background-color: $orange;
             color: $black;
         }
     }
+
     &--readMore {
         color: $white;
     }
+
     &--readMoreBrw {
         color: $brown;
     }
+
     &--start {
         color: $orange;
         text-decoration: underline;
-        
+
         &:hover {
             color: darken($orange, 10%);
         }
+
         @include breakMin($mode-991) {
             color: $white;
         }
     }
-    
+
     &--collab,
     &--send,
-    &--value{
+    &--value {
         font-family: 'Arial Bold';
-        
+
         padding: 1.7rem 0;
         margin-top: 2rem;
         width: 100%;
         border-radius: 1rem;
-        
+
         background-color: $orange;
         color: $white;
         text-transform: uppercase;
         text-align: center;
         filter: drop-shadow(0 .4rem .4rem #d57801);
-        
+
         &:hover {
             background-color: darken($orange, 15%);
         }
     }
+
     &--collab {
         margin-top: 0;
+
         @include breakMin($mode-400) {
             max-width: 23rem;
 
         }
     }
+
     &--send {
         margin-top: .5rem;
-        margin-bottom: 3rem;
+        @include breakMax($mode-600) {
+            margin-bottom: 3.5rem;
+        }
     }
+
     &--value {
-        margin-bottom: 4.5rem;
+        @include breakMax($mode-991) {
+            margin-top: 0;
+        }
     }
+
     &--rection {
         font-family: 'Arial Bold';
         width: 22rem;
         text-align: center;
-        
+
         border: .2rem solid $orange;
         border-radius: 1rem;
         padding: .8rem 0;
         color: $brown;
-        
+
         &:hover {
             background-color: $orange;
             color: $black;
         }
-        
+
+    }
+
+    &--rekvizut {
+        font-size: 1.6rem;
+        font-family: 'Arial Bold';
+
+        color: $white;
+        padding: 0 0 2rem;
+        text-transform: uppercase;
     }
 }
-
-
-
-
-
-
-
-
-
-
-

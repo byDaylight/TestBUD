@@ -2,10 +2,16 @@
     display: flex;
     flex-direction: column;
     
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 2.5rem;
     p {
         font-size: 1.2rem;
         color: $white;
         margin-bottom: 1.5rem;
+    }
+    
+    @include breakMin($mode-600){
+        flex-direction: row;
+        justify-content: space-between;
     }
 }

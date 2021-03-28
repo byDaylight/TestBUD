@@ -14,6 +14,7 @@
 
 .about__content {
     padding-bottom: 8rem;
+    padding-right: 2rem;
     
     @include breakMin($mode-991) {
         width: 50%;
@@ -25,10 +26,18 @@
     font-size: 2.4rem;
 
     line-height: 1.5em;
-    text-align: center;
     text-transform: uppercase;
     margin-bottom: 4.5rem;
     padding-top: 8rem;
+    
+    width: 100%;
+    text-align: center;
+        
+    @include breakMin($mode-991) {
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .about__text {
