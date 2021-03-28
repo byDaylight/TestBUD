@@ -1,6 +1,7 @@
 @import "_vars";
 @import "reset";
 @import "fonts";
+@import "mixin";
 
 * {
     box-sizing: border-box;
@@ -21,6 +22,7 @@ body {
 @import "blocks/container";
 //-------------------------
 @import "blocks/advantage";
+@import "blocks/work";
 @import "blocks/btn";
 @import "blocks/about";
 @import "blocks/start";

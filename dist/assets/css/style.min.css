@@ -418,6 +418,64 @@ body {
   opacity: .5;
   margin-bottom: 4rem; }
 
+.work__content {
+  padding: 6rem 0 3rem; }
+
+.work__caption {
+  font-size: 2.4rem;
+  font-family: 'Arial Black';
+  color: #431b0a;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  text-align: center; }
+
+.work__item {
+  width: 100%;
+  padding: 0 .5rem; }
+  @media (min-width: 600px) {
+    .work__item {
+      padding: 0 .7rem; } }
+  @media (min-width: 991px) {
+    .work__item {
+      padding: 0 1.5rem; } }
+
+.work__inner {
+  width: 100%;
+  height: 29.5rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem; }
+  @media (min-width: 600px) {
+    .work__inner {
+      height: 32rem; } }
+  @media (min-width: 991px) {
+    .work__inner {
+      height: 35rem; } }
+
+.work__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate3d(-50%, -50%, 0); }
+  .work__img--fir {
+    top: 50%;
+    left: 35%;
+    z-index: 2;
+    transform: translate3d(-35%, -50%, 0); }
+  .work__img--sec {
+    top: 45%;
+    left: 50%;
+    z-index: 2;
+    transform: translate3d(-50%, -45%, 0); }
+
+.work__text {
+  font-size: 1.8rem;
+  font-family: 'Arial Bold';
+  line-height: 1.3em;
+  margin: 0 0 3rem 1.5rem; }
+
 .btn {
   display: inline-block;
   font-size: 1.4rem;
@@ -642,16 +700,20 @@ ul {
 .slick-list {
   overflow: hidden; }
 
-.reaction__slider {
+.reaction__slider,
+.work__slider {
   padding-bottom: 10px; }
-  .reaction__slider .slick-dots {
+  .reaction__slider .slick-dots,
+  .work__slider .slick-dots {
     display: flex;
     align-items: center;
     justify-content: center; }
-  .reaction__slider .slick-dots li {
+  .reaction__slider .slick-dots li,
+  .work__slider .slick-dots li {
     list-style: none;
     margin: 0 1rem; }
-    .reaction__slider .slick-dots li button {
+    .reaction__slider .slick-dots li button,
+    .work__slider .slick-dots li button {
       font-size: 0;
       padding: 0;
       background-color: #a6a6a6;
@@ -661,7 +723,8 @@ ul {
       width: 1rem;
       border-radius: 50%;
       display: flex; }
-    .reaction__slider .slick-dots li.slick-active button {
+    .reaction__slider .slick-dots li.slick-active button,
+    .work__slider .slick-dots li.slick-active button {
       background-color: #ffb215;
       border: 0.4rem solid #ffd47b;
       height: 2rem;
