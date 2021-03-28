@@ -29,10 +29,13 @@
         }
         
         position: absolute;
-//        bottom: 2rem;
         bottom: 0;
         left: 50%;
         transform:translateX(-50%);
+        
+        @include breakMin($mode-600) {
+            bottom: 2rem;
+        }
     }
     
     &--readMore,

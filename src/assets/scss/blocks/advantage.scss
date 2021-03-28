@@ -1,17 +1,31 @@
 .benefit {
-//    background: linear-gradient(45deg, #393244, #725234);
     background: url(/assets/images/advantage/320_02.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
+    @include breakMin($mode-600) {
+        background: linear-gradient(45deg, #393244, #725234); 
+    }
 }
 
 .benefit__content {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     
-    padding: 5.5rem 0;
+    padding-bottom: 5.5rem;
+    
+    @include breakMin($mode-600) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+    @include breakMin($mode-600) {
+        padding-bottom: 6.5rem;
+    }
 }
 .benefit__caption {
     font-family: 'Arial Black';
@@ -21,6 +35,11 @@
     text-align: center;
     
     margin-bottom: 3rem;
+    padding-top: 5.5rem;
+    
+    @include breakMin($mode-991) {
+        padding-top: 8.5rem;
+    }
 }
 
 .benefit__item {
@@ -31,10 +50,20 @@
     text-align: center;
     border-radius: 1rem;
     
-//    background-color: #28242e;
     position: relative;
     
     margin-bottom: 2rem;
+    
+    @include breakMin($mode-600) {
+        background-color: #28242e;
+        padding: 0 2rem;
+        margin: 0 1rem 2rem;
+    }
+    
+    @include breakMin($mode-991) {
+        margin: 0 1.5rem 2rem;
+        max-width: 33.3rem;
+    }
 }
 
 .benefit__img {
@@ -56,8 +85,11 @@
     color: $white;
     opacity: .5;
     
-//    margin-bottom: 6rem;
     margin-bottom: 4rem;
+    
+    @include breakMin($mode-600) {
+        margin-bottom: 6rem;
+    }
 }
 
 
