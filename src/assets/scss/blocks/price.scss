@@ -1,0 +1,97 @@
+.price__content {
+    padding: 5.5rem 0 7rem;
+    
+    @include breakMin($mode-991) {
+        padding: 7.5rem 0 8rem;
+    }
+
+}
+
+.price__caption {
+    font-size: 2.4rem;
+    font-family: 'Arial Black';
+
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    color: $brown;
+    text-align: center;
+
+    @include breakMin($mode-991) {
+        font-size: 3.6rem;
+        margin-bottom: 4.5rem;
+    }
+}
+
+.price__scroll {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 1.5rem;
+    
+    &::-webkit-scrollbar {
+        height: 1.3rem;
+    }
+    &::-webkit-scrollbar-track {
+        background: #e2d9cf;
+        border-radius: .4rem;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $orange;
+        border-radius: .4rem;
+    } 
+}
+.price__inner {
+    width: 100%;
+    width: 109rem;
+    border-radius: 1rem;
+    background-color: #f5f3f1;
+    padding: 2rem 1rem 1.5rem;
+    
+}
+
+.price__down {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+    
+    @include breakMin($mode-600) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    @include breakMin($mode-991) {
+        margin-top: 2rem;
+    }
+}
+
+.price__total {
+    display: flex;
+    flex-direction: column;
+}
+
+.price__number {
+    width: 23rem;
+}
+
+.price__total {
+    font-family: 'Arial Black';
+    font-size: 1.8rem;
+    color: $brown;
+    margin-bottom: 2rem;
+    
+    @include breakMin($mode-787) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.price__title {
+    font-family: 'Arial Black';
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: $brown;
+    
+    @include breakMin($mode-787) {
+        margin-right: 6rem;
+    }  
+}

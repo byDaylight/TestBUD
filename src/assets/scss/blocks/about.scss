@@ -34,9 +34,11 @@
     text-align: center;
         
     @include breakMin($mode-991) {
-        width: 60%;
+        width: 90%;
         margin-right: auto;
         margin-left: auto;
+        
+        font-size: 3.6rem;
     }
 }
 

@@ -39,7 +39,8 @@
     }
 
     &--readMore,
-    &--readMoreBrw {
+    &--readMoreBrw,
+    &--addList{
         font-family: 'Arial Bold';
 
         border: .2rem solid $orange;
@@ -59,6 +60,16 @@
     &--readMoreBrw {
         color: $brown;
     }
+    &--addList {
+        color: $brown;
+        text-align: center;
+        max-width: 15.5rem;
+        margin-bottom: 2.5rem;
+        
+        @include breakMin($mode-600) {
+            margin-bottom: 0;
+        }
+    }
 
     &--start {
         color: $orange;
@@ -75,7 +86,8 @@
 
     &--collab,
     &--send,
-    &--value {
+    &--value,
+    &--sendQuery{
         font-family: 'Arial Bold';
 
         padding: 1.7rem 0;
@@ -91,6 +103,12 @@
 
         &:hover {
             background-color: darken($orange, 15%);
+        }
+    }
+    &--sendQuery {
+        @include breakMin($mode-600) {
+            width: 23rem;
+            margin-top: 0;
         }
     }
 

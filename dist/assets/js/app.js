@@ -108,14 +108,25 @@ eval("$(document).ready(function () {\r\n    $('.reaction__slider').slick({\r\n 
 
 /***/ }),
 
+/***/ "./src/assets/js/price.js":
+/*!********************************!*\
+  !*** ./src/assets/js/price.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("console.log(\"here\");\n\n//# sourceURL=webpack:///./src/assets/js/price.js?");
+
+/***/ }),
+
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./src/assets/js/app.js ./src/assets/js/file2.js ***!
-  \*************************************************************/
+/*!**************************************************************************************!*\
+  !*** multi ./src/assets/js/app.js ./src/assets/js/file2.js ./src/assets/js/price.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! E:\\Project\\remont_bud\\src\\assets\\js\\app.js */\"./src/assets/js/app.js\");\nmodule.exports = __webpack_require__(/*! E:\\Project\\remont_bud\\src\\assets\\js\\file2.js */\"./src/assets/js/file2.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/file2.js?");
+eval("__webpack_require__(/*! E:\\Project\\remont_bud\\src\\assets\\js\\app.js */\"./src/assets/js/app.js\");\n__webpack_require__(/*! E:\\Project\\remont_bud\\src\\assets\\js\\file2.js */\"./src/assets/js/file2.js\");\nmodule.exports = __webpack_require__(/*! E:\\Project\\remont_bud\\src\\assets\\js\\price.js */\"./src/assets/js/price.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/file2.js_./src/assets/js/price.js?");
 
 /***/ })
 

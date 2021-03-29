@@ -1,0 +1,138 @@
+
+.table__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &--main {
+        margin-bottom: 2rem;
+    }
+
+    &--elem {
+        margin-bottom: 1rem;
+        background-color: $white;
+        
+        border-radius: .8rem;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='4' ry='4' stroke='%23A7A7A7' stroke-width='1' stroke-dasharray='8,5' stroke-dashoffset='8' stroke-linecap='round'/%3e%3c/svg%3e");
+        
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.table__name,
+.table__ci,
+.table__cost,
+.table__quantity,
+.table__sum,
+.table__pick {
+    font-size: 1.4rem;
+    text-align: center;
+
+    color: #05090f;
+    opacity: 1;
+
+    &--top {
+        opacity: .5;
+    }
+}
+
+.table__name {
+    text-align: left;
+    width: 42rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    line-height: 1.28em;
+}
+
+.table__ci,
+.table__cost,
+.table__quantity,
+.table__sum,
+.table__pick {
+    width: 13rem;
+}
+.table__ci {
+    position: relative;
+    span {
+        font-size: .8rem;
+        position: absolute;
+        top: 8%;
+        left: 54%;
+    }
+}
+
+
+.table__input {
+    width: 6rem;
+
+    padding: .5rem;
+    border-radius: .4rem;
+    border: .2rem solid #d0d0d0;
+
+    font-family: 'Arial Regular';
+    font-size: 1.4rem;
+    text-align: center;
+    
+    &:focus {
+        box-shadow: 0 0 .5rem blue;
+    }
+}
+
+.table__pick {
+    position: relative;
+}
+
+.table__check {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.table__checkmark {
+
+    &:after {
+        background: url(/assets/images/check.svg) no-repeat;
+        background-size: 1.6rem 1.6rem;
+
+        display: block;
+        content: "";
+        width: 1.6rem;
+        height: 1.6rem;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        z-index: 2;
+        opacity: 0;
+    }
+
+    &:before {
+        display: block;
+        content: "";
+
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: .4rem;
+        border: .2rem solid #d0d0d0;
+        background-color: $white;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        z-index: 1;
+        
+    }
+}
+
+.table__check:checked + .table__checkmark:before {
+    background-color: $orange;
+}
+
+.table__check:checked + .table__checkmark:after {
+    opacity: 1;
+}

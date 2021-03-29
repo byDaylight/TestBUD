@@ -5,16 +5,22 @@
 
 .reaction__caption {
     text-align: center;
-    
+
     font-size: 2.4rem;
     font-family: 'Arial Black';
-    
+
     color: $brown;
     margin-bottom: 3.5rem;
+    text-transform: uppercase;
+
+    @include breakMin($mode-991) {
+        font-size: 3.6rem;
+        margin-bottom: 4.5rem;
+    }
 }
 
 .reaction__slider {
-    
+
     @include breakMin($mode-600) {
         display: flex;
         flex-direction: row;
@@ -26,17 +32,17 @@
 .reaction__item {
     background-color: #f5f3f1;
     padding: 1.5rem 1.5rem 2.5rem;
-    
+
     border-radius: 1rem;
     margin-bottom: 2.5rem;
     margin-right: .5rem;
     margin-left: .5rem;
-      
+
     @include breakMin($mode-600) {
         width: 45%;
         margin-right: 1rem;
         margin-left: 1rem;
-        
+
         width: 34rem;
     }
 }
@@ -45,14 +51,14 @@
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
-    
+
     border: .8rem solid #f7dfc1;
     margin-bottom: 1rem;
 }
 
 .reaction__name {
     font-family: 'Arial Bold';
-    
+
     color: $reaction;
     text-transform: uppercase;
     margin-bottom: 1.7rem;
@@ -63,19 +69,3 @@
     color: $reaction;
     opacity: .8;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

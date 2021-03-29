@@ -9,6 +9,10 @@
     text-transform: uppercase;
     margin-bottom: 4rem;
     text-align: center;
+    
+    @include breakMin($mode-991) {
+        font-size: 3.6rem;
+    }
 }
 
 

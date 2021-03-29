@@ -474,6 +474,7 @@ body {
 @media (min-width: 991px) {
     .benefit__caption {
         padding-top: 8.5rem;
+        font-size: 3.6rem;
     }
 }
 
@@ -539,6 +540,12 @@ body {
     text-transform: uppercase;
     margin-bottom: 4rem;
     text-align: center;
+}
+
+@media (min-width: 991px) {
+    .work__caption {
+        font-size: 3.6rem;
+    }
 }
 
 .work__item {
@@ -712,11 +719,18 @@ body {
 
 .btn--send {
     margin-top: .5rem;
-    margin-bottom: 3rem;
 }
 
-.btn--value {
-    margin-bottom: 4.5rem;
+@media (max-width: 600px) {
+    .btn--send {
+        margin-bottom: 3.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .btn--value {
+        margin-top: 0;
+    }
 }
 
 .btn--rection {
@@ -732,6 +746,14 @@ body {
 .btn--rection:hover {
     background-color: #ffb215;
     color: #000;
+}
+
+.btn--rekvizut {
+    font-size: 1.6rem;
+    font-family: 'Arial Bold';
+    color: #fff;
+    padding: 0 0 2rem;
+    text-transform: uppercase;
 }
 
 .about {
@@ -753,6 +775,7 @@ body {
 
 .about__content {
     padding-bottom: 8rem;
+    padding-right: 2rem;
 }
 
 @media (min-width: 991px) {
@@ -765,10 +788,20 @@ body {
     font-family: 'Arial Black';
     font-size: 2.4rem;
     line-height: 1.5em;
-    text-align: center;
     text-transform: uppercase;
     margin-bottom: 4.5rem;
     padding-top: 8rem;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 991px) {
+    .about__title {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 3.6rem;
+    }
 }
 
 .about__text {
@@ -920,6 +953,13 @@ ul {
     margin-bottom: 5rem;
 }
 
+@media (min-width: 991px) {
+    .start__caption {
+        font-size: 3.6rem;
+        margin-bottom: 6rem;
+    }
+}
+
 .start__img {
     width: 8rem;
     height: 8rem;
@@ -982,6 +1022,14 @@ ul {
     font-family: 'Arial Black';
     color: #431b0a;
     margin-bottom: 3.5rem;
+    text-transform: uppercase;
+}
+
+@media (min-width: 991px) {
+    .reaction__caption {
+        font-size: 3.6rem;
+        margin-bottom: 4.5rem;
+    }
 }
 
 @media (min-width: 600px) {
@@ -1095,41 +1143,96 @@ ul {
     background-position: center;
 }
 
-.footer__col {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.footer__col--first {
-    width: 25rem;
-    -ms-flex-order: 2;
-    order: 2;
-}
-
-.footer__col--second {
-    width: 30rem;
-    -ms-flex-order: 3;
-    order: 3;
-}
-
-.footer__col--third {
-    text-align: center;
-    -ms-flex-order: 1;
-    order: 1;
-}
-
-@media (min-width: 400px) {
-    .footer__col--third {
-        width: 25.5rem;
+@media (min-width: 600px) {
+    .footer {
+        background: linear-gradient(45deg, #393244, #725234);
     }
 }
 
 .footer__content {
-    padding-top: 3.5rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.footer__col {
+    width: 100%;
+}
+
+.footer__col--first {
+    width: 28%;
+    border-right: 0.2rem solid rgba(255, 255, 255, 0.1);
+    padding-right: 5%;
+}
+
+@media (max-width: 787px) {
+    .footer__col--first {
+        padding-right: 3%;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer__col--first {
+        width: 45%;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer__col--first {
+        width: 100%;
+        border: none;
+    }
+}
+
+.footer__col--second {
+    width: 40%;
+    border-right: 0.2rem solid rgba(255, 255, 255, 0.1);
+    padding: 0 5.4%;
+}
+
+@media (max-width: 787px) {
+    .footer__col--second {
+        padding: 0 3.4%;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer__col--second {
+        border: none;
+        width: 55%;
+        -ms-flex-order: 3;
+        order: 3;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer__col--second {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.footer__col--third {
+    width: 31.5%;
+    padding-left: 7%;
+}
+
+@media (max-width: 787px) {
+    .footer__col--third {
+        padding-left: 4.5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer__col--third {
+        width: 100%;
+        padding-left: 0;
+        -ms-flex-order: 1;
+        order: 1;
+    }
 }
 
 .footer__caption {
@@ -1141,7 +1244,7 @@ ul {
 }
 
 .footer__logo {
-    margin-bottom: 3.5rem;
+    margin: 3rem 0 3.5rem;
     height: 4.9rem;
     width: 15.2rem;
 }
@@ -1164,6 +1267,18 @@ ul {
 
 .footer__phone:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 787px) {
+    .footer__phone {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer__phone {
+        font-size: 1.6rem;
+    }
 }
 
 .form__item {
@@ -1221,7 +1336,7 @@ ul {
 }
 
 .social__link:last-child {
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
 }
 
 .social__icon {
@@ -1233,7 +1348,8 @@ ul {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 2.5rem;
 }
 
 .copyright p {
@@ -1242,8 +1358,23 @@ ul {
     margin-bottom: 1.5rem;
 }
 
+@media (min-width: 600px) {
+    .copyright {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+}
+
 .person {
     display: none;
+}
+
+@media (min-width: 400px) {
+    .person {
+        display: block;
+    }
 }
 
 .person__pos,
@@ -1256,6 +1387,41 @@ ul {
 }
 
 .person__name,
-.person__code {
+.person__code,
+.person__address {
     margin-bottom: 2.5rem;
+}
+
+@media (max-width: 600px) {
+    .person__name,
+    .person__code,
+    .person__address {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .person__address {
+        margin-bottom: 3rem;
+    }
+}
+
+.price__content {
+    padding: 5.5rem 0 6.5rem;
+}
+
+.price__caption {
+    font-size: 2.4rem;
+    font-family: 'Arial Black';
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    color: #431b0a;
+    text-align: center;
+}
+
+@media (min-width: 991px) {
+    .price__caption {
+        font-size: 3.6rem;
+        margin-bottom: 4.5rem;
+    }
 }

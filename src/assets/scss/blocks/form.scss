@@ -13,6 +13,10 @@
     border-radius: .5rem;
     outline: none;
     border: .1rem solid #dddddd;
+    
+    &:focus {
+        box-shadow: 0 0 1rem #f4de66;
+    }
 }
 
 .form__textarea {
